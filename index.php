@@ -32,6 +32,14 @@ require __DIR__ . '/db.php';
 
 <body data-bs-theme="dark">
     <div id="app">
+        <h1>
+            Tom & Germi
+        </h1>
+        <h2>
+            pet shop
+        </h2>
+
+
 
     </div>
 
