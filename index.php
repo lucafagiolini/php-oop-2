@@ -31,13 +31,36 @@ require __DIR__ . '/db.php';
 
 
 <body data-bs-theme="dark">
-    <div id="app">
-        <h1>
-            Tom & Germi
-        </h1>
-        <h2>
-            pet shop
-        </h2>
+    <div id="app" class="d-flex container justify-content-center flex-column align-content-center">
+        <div class=" text-center m-4">
+            <h1>
+                Tom & Germi
+            </h1>
+            <h2>
+                pet shop
+            </h2>
+        </div>
+
+        <div class="">
+            <ul class="row-cols-2 flex-wrap d-flex justify-content-center gap-4">
+                <?php
+                foreach ($products as $product) {
+                ?>
+                    <li class="card col" style="width: 18rem;">
+                        <img src="<?= $product->image ?>" class="card-img-top" alt="<?= $product->name ?>">
+                        <div class="card-body">
+                            <h5 class="card-title"> <?= $product->name ?> </h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </li>
+                <?php
+                }
+                ?>
+            </ul>
+        </div>
+
+
 
 
 
