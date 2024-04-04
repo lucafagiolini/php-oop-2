@@ -1,3 +1,9 @@
+<?php
+require __DIR__ . '/db.php';
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +31,10 @@
 
 
 <body data-bs-theme="dark">
-    ciao
+    <div id="app">
+
+    </div>
+
 
 
 
